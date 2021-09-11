@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'core/base.html' %}
+ 
+{% block title %}Portafolio | Mi Web Personal{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 
-<body>
+{% block background %}{% load static %}{% static 'core/img/home-bg-2.jpg' %}{% endblock%}
 
-    <h1>mi web 1</h1>
-    <ul>
-        <li><a href="">portada </a> </li>
-        <li><a href="/about">about-me</a> </li>
-        <li><a href="/portafolio">Portafolio</a> </li>
-        <li><a href="/contacto">Contacto</a> </li>
-    </ul>
+{% block headers %}  
+    <h1>Henry Puentes</h2>
+    <span class="subheading">Ingeniero de Sistemas</span>
+{% endblock%}
+
+{% block content %}    
 
     <h2>Portafolio</h2>
-    <p>Esta es es el portafolio</p>
-
-
-
-</body>
-
-</html>
+    <p>Esta es es el portafolio </p>
+{% endblock%}
